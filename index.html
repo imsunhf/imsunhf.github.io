@@ -5,8 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    #content{
+      width:100%;
+      text-align:center;
+    }
+    #p{
+      display:inline-block;
+      color:#f00;
+    }
+  </style>
 </head>
 <body>
   <div>sunhaifeng</div>
+  <div id="content">
+    <pre id='p'></pre>
+  </div>
 </body>
+<script>n=setInterval("for(n+=7,i=k,P='p.\\n';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;p.innerHTML=P",k=64)</script>
+<script>
+  var elep = document.getElementById('p')
+  var colorArr = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f']
+  function getColor(){
+    var i = 6,colorValue = '#',bgcolorValue = '#';
+    while(i--){
+      colorValue += colorArr[parseInt(Math.random() * 16)]
+      bgcolorValue += colorArr[parseInt(Math.random() * 16)]
+    }
+    elep.style.color = colorValue
+    elep.style.backgroundColor = bgcolorValue
+    setTimeout(function(){
+      getColor()
+    },1000)
+  }
+  getColor()
+</script>
 </html>
