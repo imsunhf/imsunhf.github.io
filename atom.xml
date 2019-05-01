@@ -4,7 +4,7 @@
   <title><![CDATA[The Shf]]></title>
   <link href="https://sunbest.top/atom.xml" rel="self"/>
   <link href="https://sunbest.top/"/>
-  <updated>2019-04-27T08:56:36+08:00</updated>
+  <updated>2019-05-01T21:54:37+08:00</updated>
   <id>https://sunbest.top/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -13,10 +13,10 @@
   <generator uri="http://www.mweb.im/">MWeb</generator>
   
   <entry>
-    <title type="html"><![CDATA[test]]></title>
-    <link href="https://sunbest.top/15563238946772.html"/>
-    <updated>2019-04-27T08:11:34+08:00</updated>
-    <id>https://sunbest.top/15563238946772.html</id>
+    <title type="html"><![CDATA[文章4]]></title>
+    <link href="https://sunbest.top/15563268818626.html"/>
+    <updated>2019-04-27T09:01:21+08:00</updated>
+    <id>https://sunbest.top/15563268818626.html</id>
     <content type="html"><![CDATA[
 <h2 id="toc_0">标题1</h2>
 
@@ -28,39 +28,39 @@
 
 <h2 id="toc_2">标题3</h2>
 
-<p>亲亲亲亲亲亲亲亲</p>
+<p>亲亲亲亲亲亲亲亲😂</p>
 
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[vbb]]></title>
+    <title type="html"><![CDATA[用户输入不合法时，禁止将文本输入文本框]]></title>
     <link href="https://sunbest.top/15563238799174.html"/>
     <updated>2019-04-27T08:11:19+08:00</updated>
     <id>https://sunbest.top/15563238799174.html</id>
     <content type="html"><![CDATA[
-<h1 id="toc_0">test</h1>
+<p>下面以 文本框只能输入数字为例：</p>
 
-<h2 id="toc_1">标题1</h2>
+<pre><code class="language-javascript">&lt;!--html--&gt;
+&lt;input id=&quot;input&quot; /&gt;
+let input = document.querySelector(&#39;#input&#39;)
+input.addEventListener(&#39;keypress&#39;, function(e){
+    if(e.charCode &lt; 48 || e.charCode &gt; 57){
+        e.preventDefault()
+    }
+})
+</code></pre>
 
-<p>qqqqq</p>
-
-<h2 id="toc_2">标题2</h2>
-
-<p>亲亲亲亲亲亲</p>
-
-<h2 id="toc_3">标题3</h2>
-
-<p>亲亲亲亲亲亲亲亲</p>
+<p>🍭 可以开始了吗， 已经结束了</p>
 
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[test]]></title>
-    <link href="https://sunbest.top/15563219169455.html"/>
+    <title type="html"><![CDATA[文章3]]></title>
+    <link href="https://sunbest.top/test.html"/>
     <updated>2019-04-27T07:38:36+08:00</updated>
-    <id>https://sunbest.top/15563219169455.html</id>
+    <id>https://sunbest.top/test.html</id>
     <content type="html"><![CDATA[
 <h2 id="toc_0">标题1</h2>
 
