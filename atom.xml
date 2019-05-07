@@ -4,7 +4,7 @@
   <title><![CDATA[The Shf]]></title>
   <link href="https://sunbest.top/atom.xml" rel="self"/>
   <link href="https://sunbest.top/"/>
-  <updated>2019-05-03T11:58:41+08:00</updated>
+  <updated>2019-05-07T21:04:15+08:00</updated>
   <id>https://sunbest.top/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -34,6 +34,19 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[mac 使用技巧]]></title>
+    <link href="https://sunbest.top/15572339910216.html"/>
+    <updated>2019-05-07T20:59:51+08:00</updated>
+    <id>https://sunbest.top/15572339910216.html</id>
+    <content type="html"><![CDATA[
+<h1 id="toc_0">显示隐藏的文件</h1>
+
+<p>快捷键 <code>Command + Shift + .</code> 切换 隐藏文件的显示 和 隐藏</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[文章3]]></title>
     <link href="https://sunbest.top/test.html"/>
     <updated>2019-04-27T07:38:36+08:00</updated>
@@ -55,7 +68,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[用户输入不合法时，禁止将文本输入文本框]]></title>
+    <title type="html"><![CDATA[preventDefault 妙用，控制文本框输入]]></title>
     <link href="https://sunbest.top/15563238799174.html"/>
     <updated>2019-04-27T08:11:19+08:00</updated>
     <id>https://sunbest.top/15563238799174.html</id>
