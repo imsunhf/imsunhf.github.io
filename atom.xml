@@ -4,7 +4,7 @@
   <title><![CDATA[The Shf]]></title>
   <link href="https://sunbest.top/atom.xml" rel="self"/>
   <link href="https://sunbest.top/"/>
-  <updated>2019-05-08T22:33:30+08:00</updated>
+  <updated>2019-05-08T23:40:37+08:00</updated>
   <id>https://sunbest.top/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -44,11 +44,79 @@ input.addEventListener(&#39;keypress&#39;, function(e){
 </code></pre>
 
 <p>🍭 可以开始了吗， <br/>
-🍬 已经结束了<br/>
+🍬 已经 完美结束啦<br/>
 🍭 让我试试～<br/>
-🍬 等等，不许你用中文输入法<br/>
-🍭 <a href="media/15563238799174/QQ20190508-223257-HD.mp4">QQ20190508-223257-HD</a><br/>
-🍬 嗯：咱们正式开始吧</p>
+🍬 等等，不许你用中文输入法😂😂😂<br/>
+🍭 <br/>
+🍬 那咱们正式开始吧</p>
+
+<p>🚗🚗🚗 滴滴 看样子 只能寻求 <code>keyboardEvent</code> 家族来帮我们解决问题了</p>
+
+<pre><code class="language-javascript">let eventName = keyboardEvent.filter(event =&gt; 解决中文输入法问题(event))
+console.log(eventName) // [] 🤭🤭🤭
+</code></pre>
+
+<p>我还没有放弃， 因为我想到了 工作中的 好伙伴 <code>element-ui</code>，也许它能给我些灵感</p>
+
+<p>迅速找到了两个可能相关的组件</p>
+
+<ul>
+<li>input 输入框</li>
+<li>inputNumber 计数器</li>
+</ul>
+
+<p>然而：<br/>
+🤦‍♀️ input 输入框 类型属性 <code>type</code> 支持的是原生input type值<br/>
+🤦‍♀️ inputNumber 只是 失去焦点 时 校验输入的值</p>
+
+<p>此时 一股第三方力量 强行介入<br/>
+🤖 你不会可以问我啊，谷歌一下，全都明白<br/>
+🍬有道理<br/>
+🍬啪啪啪。。。enter<br/>
+🍬☺️知道答案啦 ，你怎么什么都会呀😍</p>
+
+<p>让我们 修改下上面的代码</p>
+
+<pre><code class="language-javascript">&lt;!--html--&gt;
+&lt;input id=&quot;input&quot; /&gt;
+let input = document.querySelector(&#39;#input&#39;)
+input.addEventListener(&#39;keypress&#39;, function(e){
+    if(e.charCode &lt; 48 || e.charCode &gt; 57){
+        e.preventDefault()
+    }
+})
+input.addEventListener(&#39;input&#39;, function(e){
+    e.target.value = e.target.value.replace(/[^0-9\.]/g, &#39;&#39;)
+})
+</code></pre>
+
+<p>测试：</p>
+
+<ul>
+<li>谷歌 KO</li>
+<li>火狐 KO</li>
+<li>IE11 KO</li>
+<li>IE10 KO</li>
+<li>IE9 KO</li>
+<li>。。。</li>
+</ul>
+
+<p>🍬 快看 你可以这么用了<br/>
+🍭 🤨 还需要 监听 <code>keypress</code>事件吗<br/>
+🍬 。。。</p>
+
+<pre><code class="language-javascript">&lt;!--html--&gt;
+&lt;input id=&quot;input&quot; /&gt;
+let input = document.querySelector(&#39;#input&#39;)
+input.addEventListener(&#39;input&#39;, function(e){
+    e.target.value = e.target.value.replace(/[^0-9\.]/g, &#39;&#39;)
+})
+</code></pre>
+
+<p>🍭 😃<br/>
+🍬 我标题要改吗<br/>
+🍭 你究竟是 跑题了 还是 从入门到放弃<br/>
+🍬 🤦‍♀️🤦‍♀️🤦‍♀️</p>
 
 ]]></content>
   </entry>
