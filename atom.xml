@@ -4,7 +4,7 @@
   <title><![CDATA[The Shf]]></title>
   <link href="https://sunbest.top/atom.xml" rel="self"/>
   <link href="https://sunbest.top/"/>
-  <updated>2019-05-12T17:18:45+08:00</updated>
+  <updated>2019-05-12T22:54:40+08:00</updated>
   <id>https://sunbest.top/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -151,16 +151,18 @@ input.addEventListener(&#39;input&#39;, function(e){
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[PR]]></title>
+    <title type="html"><![CDATA[![喵喵喵](http://placekitten.com/g/500/300)]]></title>
     <link href="https://sunbest.top/15576526168787.html"/>
     <updated>2019-05-12T17:16:56+08:00</updated>
     <id>https://sunbest.top/15576526168787.html</id>
     <content type="html"><![CDATA[
-<h2 id="toc_0">逗比版</h2>
+<h1 id="toc_0">PR</h1>
+
+<h2 id="toc_1">逗比版</h2>
 
 <p>我改了你们代码，你们拉回去看看吧</p>
 
-<h2 id="toc_1">权威版</h2>
+<h2 id="toc_2">权威版</h2>
 
 <p>当你想更正别人的仓库时，要走一个流程</p>
 
