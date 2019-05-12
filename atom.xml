@@ -4,7 +4,7 @@
   <title><![CDATA[The Shf]]></title>
   <link href="https://sunbest.top/atom.xml" rel="self"/>
   <link href="https://sunbest.top/"/>
-  <updated>2019-05-12T10:08:34+08:00</updated>
+  <updated>2019-05-12T15:20:42+08:00</updated>
   <id>https://sunbest.top/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -78,6 +78,8 @@ input.addEventListener(&#39;keypress&#39;, function(e){
 🍬 那咱们正式开始吧</p>
 
 <p>🚗🚗🚗 滴滴 看样子 只能寻求 <code>keyboardEvent</code> 家族来帮我们解决问题了</p>
+
+<span id="more"></span><!-- more -->
 
 <pre><code class="language-javascript">let eventName = keyboardEvent.filter(event =&gt; 解决中文输入法问题(event))
 console.log(eventName) // [] 🤭🤭🤭
