@@ -4,7 +4,7 @@
   <title><![CDATA[The Shf]]></title>
   <link href="https://sunbest.top/atom.xml" rel="self"/>
   <link href="https://sunbest.top/"/>
-  <updated>2019-05-12T15:20:42+08:00</updated>
+  <updated>2019-05-12T17:18:45+08:00</updated>
   <id>https://sunbest.top/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -73,8 +73,8 @@ input.addEventListener(&#39;keypress&#39;, function(e){
 <p>🍭 可以开始了吗， <br/>
 🍬 已经 完美结束啦<br/>
 🍭 让我试试～<br/>
+🍭 <img src="media/15563238799174/ScreenFlow.gif" alt="ScreenFlo"/><br/>
 🍬 等等，不许你用中文输入法😂😂😂<br/>
-🍭 <br/>
 🍬 那咱们正式开始吧</p>
 
 <p>🚗🚗🚗 滴滴 看样子 只能寻求 <code>keyboardEvent</code> 家族来帮我们解决问题了</p>
@@ -146,6 +146,40 @@ input.addEventListener(&#39;input&#39;, function(e){
 🍬 我标题要改吗<br/>
 🍭 你究竟是 跑题了 还是 从入门到放弃<br/>
 🍬 🤦‍♀️🤦‍♀️🤦‍♀️</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PR]]></title>
+    <link href="https://sunbest.top/15576526168787.html"/>
+    <updated>2019-05-12T17:16:56+08:00</updated>
+    <id>https://sunbest.top/15576526168787.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">逗比版</h2>
+
+<p>我改了你们代码，你们拉回去看看吧</p>
+
+<h2 id="toc_1">权威版</h2>
+
+<p>当你想更正别人的仓库时，要走一个流程</p>
+
+<ol>
+<li>先fork 别人的仓库，不会有人让你直接改原仓库的</li>
+<li>clone 到本地分支，做一些bug fix</li>
+</ol>
+
+<pre><code class="language-shell">git clone https://github.com bootstrap
+cd  bootstrap
+git checkout -b test-pr
+git add . &amp;&amp; git commit -m &quot;test-pr&quot;
+git push origin test-pr
+</code></pre>
+
+<ol>
+<li>发起 pull request给原仓库，让他看到你修改的bug 点击 仓库 compare &amp; pull request 按钮</li>
+<li>原仓库 review 这个bug，如果正确的话，就会merge到他自己的项目中 至此 整个 pull request的过程就结束了</li>
+</ol>
 
 ]]></content>
   </entry>

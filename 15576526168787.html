@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  mac 使用技巧 - The Shf
+  PR - The Shf
   
   </title>
   
@@ -108,14 +108,14 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>mac 使用技巧</h1>
+          <h1>PR</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2018/12/7</span>
+          <span class="date">2018/3/11</span>
 
           <span>posted in&nbsp;</span> 
           
-              <span class="posted-in"><a href='mac.html'>mac</a></span>
+              <span class="posted-in"><a href='%E8%A7%81%E8%AF%86.html'>见识</a></span>
            
          
           <span class="comments">
@@ -128,9 +128,30 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <h1 id="toc_0">显示隐藏的文件</h1>
+      <h2 id="toc_0">逗比版</h2>
 
-<p>快捷键 <code>Command + Shift + .</code> 切换 隐藏文件的显示 和 隐藏</p>
+<p>我改了你们代码，你们拉回去看看吧</p>
+
+<h2 id="toc_1">权威版</h2>
+
+<p>当你想更正别人的仓库时，要走一个流程</p>
+
+<ol>
+<li>先fork 别人的仓库，不会有人让你直接改原仓库的</li>
+<li>clone 到本地分支，做一些bug fix</li>
+</ol>
+
+<pre><code class="language-shell">git clone https://github.com bootstrap
+cd  bootstrap
+git checkout -b test-pr
+git add . &amp;&amp; git commit -m &quot;test-pr&quot;
+git push origin test-pr
+</code></pre>
+
+<ol>
+<li>发起 pull request给原仓库，让他看到你修改的bug 点击 仓库 compare &amp; pull request 按钮</li>
+<li>原仓库 review 这个bug，如果正确的话，就会merge到他自己的项目中 至此 整个 pull request的过程就结束了</li>
+</ol>
 
 
     
@@ -141,13 +162,13 @@
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
+          <a href="15563238799174.html" 
+          title="Previous Post: preventDefault 妙用，控制文本框输入">&laquo; preventDefault 妙用，控制文本框输入</a>
+      
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
-      
-          <a  href="15559869234785.html" 
-          title="Next Post: RESTful">RESTful &raquo;</a>
       
       </p>
         </div>
