@@ -4,7 +4,7 @@
   <title><![CDATA[The Shf]]></title>
   <link href="https://sunbest.top/atom.xml" rel="self"/>
   <link href="https://sunbest.top/"/>
-  <updated>2019-05-12T23:47:04+08:00</updated>
+  <updated>2019-05-13T23:47:41+08:00</updated>
   <id>https://sunbest.top/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -179,6 +179,37 @@ git push origin test-pr
 <ol>
 <li>发起 pull request给原仓库，让他看到你修改的bug 点击 仓库 compare &amp; pull request 按钮</li>
 <li>原仓库 review 这个bug，如果正确的话，就会merge到他自己的项目中 至此 整个 pull request的过程就结束了</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[为什么可以使用 // 代替 http:// 或 https://]]></title>
+    <link href="https://sunbest.top/15577483137269.html"/>
+    <updated>2019-05-13T19:51:53+08:00</updated>
+    <id>https://sunbest.top/15577483137269.html</id>
+    <content type="html"><![CDATA[
+<p><code>//</code> 顾名思义：😃 两个双斜杠</p>
+
+<p>🤨🤨 严肃点</p>
+
+<p><code>//</code> 是缺省协议的写法，是指协议自动采用当前页面的协议</p>
+
+<p>即： 当前页面是 <code>http</code>，则采用<code>http</code>协议访问<br/>
+当前页面是 <code>https</code>，则采用<code>https</code>协议访问，一般是使用在内链中</p>
+
+<h2 id="toc_0">优点</h2>
+
+<ol>
+<li>根据用户打开的页面自适应资源的请求方式</li>
+<li>可以阻止在 <code>https</code> 的页面，浏览器会默认组织 非<code>https</code>内容的情况</li>
+</ol>
+
+<h2 id="toc_1">缺点</h2>
+
+<ol>
+<li>本地调试时，使用的协议是文本协议<code>file://</code></li>
 </ol>
 
 ]]></content>
