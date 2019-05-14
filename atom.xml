@@ -4,7 +4,7 @@
   <title><![CDATA[The Shf]]></title>
   <link href="https://sunbest.top/atom.xml" rel="self"/>
   <link href="https://sunbest.top/"/>
-  <updated>2019-05-13T23:47:41+08:00</updated>
+  <updated>2019-05-14T19:41:09+08:00</updated>
   <id>https://sunbest.top/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -21,6 +21,51 @@
 <h1 id="toc_0">显示隐藏的文件</h1>
 
 <p>快捷键 <code>Command + Shift + .</code> 切换 隐藏文件的显示 和 隐藏</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[mac os 系统目录结构]]></title>
+    <link href="https://sunbest.top/15578321968662.html"/>
+    <updated>2019-05-14T19:09:56+08:00</updated>
+    <id>https://sunbest.top/15578321968662.html</id>
+    <content type="html"><![CDATA[
+<p>最近使用 <code>nginx</code> 需要修改配置文件，虽然文档对路径写的非常清楚，<code>ctrl + c ctrl + v</code> 就可以快速找到需要的文件，但是加上之前使用过程中的困惑，索性就整理下 系统中 各个目录的作用吧，使得以后使用的更得心应手吧<br/>
+🚗🚗🚗🚗🚗🚗🚗🚗</p>
+
+<h2 id="toc_0">目录结构</h2>
+
+<p>首先看下根目录 都有哪些目录吧<br/>
+<img src="media/15578321968662/15578327680843.jpg" alt="" style="width:567px;"/></p>
+
+<p>因为mac OS 属于类 Unix 系统，所以 mac OS 目录 = Unix 系统通用目录 + 独有目录，下面将分别介绍。</p>
+
+<h2 id="toc_1">Unix 通用目录</h2>
+
+<ul>
+<li><code>/bin</code> 传统 unix 命令的存放目录，如 ls，rm， mv 等</li>
+<li><code>/sbin</code> 传统 unix 管理类命令存放目录，如 <code>fdisk</code>，<code>ifconfig</code>等</li>
+<li><code>/usr</code> 第三方程序安装目录</li>
+<li><code>/usr/bin, /usr/sbin,/usr/lib</code>, 其中<code>/usr/lib</code>目录中存放了共享库（动态链接库）</li>
+<li><code>/dev</code> 设备文件存放目录，如 代表硬盘的 <code>/dev/disk0</code></li>
+<li><code>/etc</code> 标准unix系统配置文件存放目录，如用户密码文件 <code>/etc/passwd</code>。此目录实际指向 <code>/private/etc</code> 的链接</li>
+<li><code>/tmp</code> 临时文件存放目录，其权限为所有人任意读写。此目录实际指向 <code>/private/tmp</code> 的链接</li>
+<li><code>/var</code> 存放经常变化的文件，如日志文件。此目录实际指向 <code>/private/var</code>的链接</li>
+</ul>
+
+<h2 id="toc_2">mac OS 独有目录</h2>
+
+<ul>
+<li><code>/Applications</code> 应用程序目录，默认所有的GUI应用程序都安装在这里</li>
+<li><code>/Library</code> 系统的数据文件、帮助文件、文档等等</li>
+<li><code>/Network</code> 网络节点存放目录</li>
+<li><code>/System</code> 只包含一个名为 <code>Library</code> 的目录，这个字目录中存放了系统的绝大部分组件，如各种<code>framework</code>，以及内核模块，字体文件等等</li>
+<li><code>/Users</code> 存放用户的个人资料和配置。每个用户有自己的单独目录</li>
+<li><code>/Volumes</code> 文件系统挂载点存放目录</li>
+<li><code>/cores</code> 内核转储文件存放目录。当一个进程奔溃时，如果系统允许则会产生转储文件</li>
+<li><code>/private</code> 里面的字目录存放了 <code>/tmp，/var，/etc</code> 等链接目录的目标目录</li>
+</ul>
 
 ]]></content>
   </entry>
